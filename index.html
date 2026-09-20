@@ -1,0 +1,154 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovel Ann P. Mercado — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#top" class="nav-logo">J.A.M.</a>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <a id="top"></a>
+
+  <header class="header">
+    <div class="profile-container">
+      <br>
+      <img src="profile.jpg" alt="Jovel Ann P. Mercado" class="profile-img">
+      <h1>Jovel Ann P. Mercado</h1>
+      <p class="title">IT Student • Aspiring UX/UI Designer</p>
+      <p class="intro">Passionate about making tech simple and inclusive. Currently building my skills, eager to learn and grow through  projects and internships.</p>
+      <div class="links">
+       <a href="mailto:jovelannmercado19@gmail.com" class="contact-btn">Email</a>
+      <a href="https://github.com/velpepper19" target="_blank" class="contact-btn">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="about">
+    <h2 class="section-title">About</h2>
+    <p>I am Jovel Ann Mercado, an IT student broadening my knowledge across technologies. I love building things that are not only functional but also easy and inclusive for everyone to use especially making technology work better for people with different needs.</p>
+    <br>
+    <p>I'm currently focused on building my first portfolio website and learning the basics of web design. I'm eager to keep practicing and create projects that help me grow my skills in design and development.</p>
+  </section>
+
+  <section class="section" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-box">
+      <h3 class="sub-heading">Languages</h3>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>C#</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3 class="sub-heading">Tools</h3>
+      <ul class="skill-list">
+        <li>VS Code</li>
+        <li>Canva</li>
+        <li>Eclipse</li>
+        <li>Visual Studio</li>
+      </ul>
+    </div>
+
+    <div class="skill-box">
+      <h3 class="sub-heading">Other Skills</h3>
+      <ul class="skill-list">
+        <li>Logical Problem-Solving</li>
+        <li>Attention to Detail</li>
+        <li>Willingness to Learn</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+</section>
+
+  <section class="section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-box">
+      <img src="focuspath.jpeg" alt="FocusPath App Preview" class="project-img">
+      <h3>FocusPath — ADHD Friendly Focus App</h3>
+      <p>A student-focused app helping users with ADHD stay organized and focused. Features simplified task tracking, focus sessions, and a calm, distraction-free accessible interface.</p>
+      <div class="project-tags">
+        <span class="tag ui-tag">UI Design</span>
+        <span class="tag ux-tag">Canva</span>
+        <span class="tag ux-tag">Accessible Design</span>
+        <span class="tag concept-tag">Work In Progress</span>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <img src="library.jpg" alt="Library Management System Preview" class="project-img">
+      <h3>Library Management System</h3>
+      <p>A library management system designed to help students and staff easily browse, borrow, track, and manage books. Built for clarity and accessibility.</p>
+      <div class="project-tags">
+        <span class="tag ui-tag">Accessible Design</span>
+        <span class="tag ux-tag">C#</span>
+        <span class="tag ux-tag">Visual Studio</span>
+        <span class="tag ux-tag">SQL</span>
+        <span class="tag concept-tag">Course Project — Completed</span>
+    </div>
+  </div>
+</section>
+
+  <section class="section" id="experience">
+  <h2 class="section-title">Education</h2>
+
+  <div class="card">
+    <span class="period">Jul 2025 — Present</span>
+    <h3>Bachelor of Science in Information Technology</h3>
+    <p>Eastern Samar State University, Borangan City, Eastern Samar</p>
+    <p>Currently pursuing my 2nd year, learning web technologies, Java programming and human-computer interaction.</p>
+  </div>
+
+</section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Eager to keep learning and contributing to user-centered projects. Feel free to reach out anytime!</p>
+    <div class="contact-info">
+  <p>📧 <a href="mailto:jovelannmercado19@gmail.com" class="contact-link">jovelannmercado19@gmail.com</a></p>
+  <p>💻 <a href="https://github.com/velpepper19" target="_blank" class="contact-link">github.com/velpepper19</a></p>
+  </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Jovel Ann P. Mercado. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
